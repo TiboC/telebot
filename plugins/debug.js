@@ -20,15 +20,16 @@ var count = function(){
 
 
     this.doMessage = function (msg, reply) {
-	
+			
+			//Print name of chat if it's a group
 			var color = (chat_colors[msg.chat.id] ? chat_colors[msg.chat.id] : (chat_colors[msg.chat.id] = various_colors[Math.floor(Math.random() * various_colors.length)]));
-			if (color in colors && typeof colors[color] === "function") {
-					if (last_chat != msg.chat.id) console.log(colors[color](msg.chat.title));
-			}
-			else console.log(msg.chat.title);
+			if (msg.chat.id < 0 && last_chat != msg.chat.id) console.log(colors[color](msg.chat.title));
+
+			//Print name of sender and align depending of if it is a group
+			var color = (chat_colors[msg.from.id] ? chat_colors[msg.from.id] : (chat_colors[msg.from.id] = various_colors[Math.floor(Math.random() * various_colors.length)]));
+			console.log( (msg.chat.id > 0 ? '' : '     ') + colors[color](msg.from.username + ': ') + msg.text.trunc(50));
 
 			last_chat = msg.chat.id;
-			console.log("   " +msg.from.first_name +": "+ msg.text.trunc(50));
 
     };
 
