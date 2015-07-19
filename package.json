@@ -6,7 +6,8 @@
   "dependencies": {
     "node-telegram-bot-api": "git://github.com/yagop/node-telegram-bot-api",
     "request": "~2.58.0",
-		"nodemon":"*"
+		"nodemon":"*",
+		"colors": "*"
   },
   "devDependencies": {},
   "scripts": {
