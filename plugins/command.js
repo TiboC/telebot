@@ -9,7 +9,7 @@ Bot: command: command
 		 param3: param3
 */
 
-var ping = function(){
+var command = function(){
 
     this.init = function(){
 
@@ -22,7 +22,7 @@ var ping = function(){
 
     this.doMessage = function (msg, reply) {
 				var msg = msg.text.toLowerCase();
-				
+				console.log(msg);				
 				var text = "";
 
 				var split = msg.split(" ");
@@ -39,4 +39,4 @@ var ping = function(){
 
 };
 
-module.exports = ping;
+module.exports = command;
