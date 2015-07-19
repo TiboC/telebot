@@ -28,7 +28,7 @@ var count = function(){
 			else console.log(msg.chat.title);
 
 			last_chat = msg.chat.id;
-			console.log("   " +msg.from.first_name +": "+ msg.text.trunc(20));
+			console.log("   " +msg.from.first_name +": "+ msg.text.trunc(50));
 
     };
 
