@@ -1,11 +1,11 @@
-# Node-Telegram-Bot
+# Telebot
 
-A Telegram Bot which supports user-made plugins. 
+A Telegram Bot for Telebite conv.
 
-Platform: Node.js 
-
+Thanks to: [node-telegram-bot](https://github.com/crisbal/Node-Telegram-Bot)
 Thanks to: [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) 
 
+TODO TO BE MODIFIED
 ## How to use the bot
 
 * Clone/Download/Fork the repository
